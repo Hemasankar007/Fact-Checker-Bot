@@ -12,6 +12,8 @@ The AI Fact-Checker Bot is a powerful tool designed to verify the accuracy of cl
 - **Extensible and Configurable:** Easily configure the bot's behavior through `config/settings.py` and `config/prompts.yaml`.
 - **History Tracking:** The Streamlit UI keeps a history of your previous fact-checks for easy reference.
 
+
+
 ## How it Works
 
 The bot operates in the following sequence:
@@ -48,6 +50,7 @@ The bot operates in the following sequence:
 
 To run the bot with the Streamlit web interface:
 
+
 ```bash
 streamlit run src/ui/streamlit_app.py
 ```
@@ -61,6 +64,9 @@ python main.py --ui cli
 ```
 
 ## Screenshots
+![alt text](image-1.png)
+
+![alt text](image-2.png)
 
 ### Streamlit Interface
 
