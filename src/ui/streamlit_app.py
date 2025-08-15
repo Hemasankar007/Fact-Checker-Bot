@@ -39,6 +39,11 @@ if st.button("Check Fact") and claim:
                     st.markdown(f"**Assumption:** {assumption['assumption']}")
                     st.markdown(f"**Verdict:** {assumption['verification']}")
                     st.markdown(f"**Confidence:** {assumption['confidence']}")
+                    if assumption['evidence'] and assumption['evidence'] != "Known fact":
+                        st.markdown("**Evidence:**")
+                        for evidence in assumption['evidence']:
+                            st.markdown(f"- **{evidence['title']}**: {evidence['snippet']}")
+                            st.markdown(f"  [Source]({evidence['url']})")
                     st.write("---")
         else:
             st.error(f"An error occurred: {result.get('error', 'Unknown error')}")
